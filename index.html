@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to XYZ eShop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="hero"></div>
+    </div>
+    <nav id="navbar_main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <header>
+        <div>
+          <h1 class="header-title">
+            Welcome to XYZ eShop - Your One-Stop Destination for All Your
+            Shopping Needs!
+          </h1>
+          <h2 class="header-description">
+            Discover our wide range of products, from electronics to home
+            essentials, all at amazing prices.
+          </h2>
+          <button class="btn-start">Start Shopping Now</button>
+        </div>
+        <div>
+          <img
+            src="/img/bg.jpg"
+            class="img-bg"
+            alt="Description of the image"
+          />
+        </div>
+      </header>
+      <section class="grid-item-2">
+        <h3>Featured Products</h3>
+        <div class="tabs">
+          <div role="tablist" aria-label="Sample Tabs">
+            <button
+              role="tab"
+              aria-selected="true"
+              aria-controls="Product1"
+              id="Product1-tab"
+            >
+              Product 1
+            </button>
+            <button
+              role="tab"
+              aria-selected="false"
+              aria-controls="Product2"
+              id="Product2-tab"
+              tabindex="-1"
+            >
+              Product 2
+            </button>
+            <button
+              role="tab"
+              aria-selected="false"
+              aria-controls="Product3"
+              id="Product3-tab"
+              tabindex="-1"
+            >
+              Product 3
+            </button>
+          </div>
+
+          <section
+            id="Product1"
+            role="tabpanel"
+            tabindex="0"
+            aria-labelledby="Product1-tab"
+          >
+            <h2>Product Search</h2>
+            <div class="product-search">
+              <input
+                type="text"
+                id="product-input"
+                placeholder="Type product name"
+              />
+              <input
+                list="countries"
+                id="country-input"
+                placeholder="Type or select country"
+              />
+              <datalist id="countries">
+                <option value="Country 1"></option>
+                <option value="Country 2"></option>
+                <option value="Country 3"></option>
+              </datalist>
+
+              <button type="button" id="search-button">
+                <i class="icon fas fa-search"></i> Search
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="Product2"
+            role="tabpanel"
+            tabindex="0"
+            aria-labelledby="Product2-tab"
+            hidden
+          >
+            <h2>Product 2</h2>
+            <div class="product-search">
+              <input
+                type="text"
+                id="product-input"
+                placeholder="Type product name"
+              />
+              <input
+                list="countries"
+                id="country-input"
+                placeholder="Type or select country"
+              />
+              <datalist id="countries">
+                <option value="Country 1"></option>
+                <option value="Country 2"></option>
+                <option value="Country 3"></option>
+              </datalist>
+
+              <button type="button" id="search-button">
+                <i class="icon fas fa-search"></i> Search
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="Product3"
+            role="tabpanel"
+            tabindex="0"
+            aria-labelledby="Product3-tab"
+            hidden
+          >
+            <h2>Product 3</h2>
+            <div class="product-search">
+              <input
+                type="text"
+                id="product-input"
+                placeholder="Type product name"
+              />
+              <input
+                list="countries"
+                id="country-input"
+                placeholder="Type or select country"
+              />
+              <datalist id="countries">
+                <option value="Country 1"></option>
+                <option value="Country 2"></option>
+                <option value="Country 3"></option>
+              </datalist>
+
+              <button type="button" id="search-button">
+                <i class="icon fas fa-search"></i> Search
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="grid-item-1">
+        <h3>Product Categories</h3>
+        <ul class="main_ul">
+          <li class="centered">
+            <div class="fas_logo"><i class="fas fa-tv"></i></div>
+            <div>Electronics</div>
+            <div class="description">
+              Devices like TVs, computers, smartphones, and related accessories.
+            </div>
+          </li>
+          <li class="centered">
+            <div class="fas_logo"><i class="fas fa-tshirt"></i></div>
+            <div>Clothing and Apparel</div>
+            <div class="description">
+              Diverse clothing items, footwear, and accessories for all genders
+              and ages.
+            </div>
+          </li>
+          <li class="centered">
+            <div class="fas_logo"><i class="fas fa-blender"></i></div>
+            <div>Home and Kitchen</div>
+            <div class="description">
+              Home decor, furniture, bedding, cookware, appliances, and other
+              kitchen items.
+            </div>
+          </li>
+          <li class="centered">
+            <div class="fas_logo"><i class="fas fa-heartbeat"></i></div>
+            <div>Health and Beauty</div>
+            <div class="description">
+              Skin care, makeup, hair care products, fragrances, nutritional
+              supplements, and health items.
+            </div>
+          </li>
+          <li class="centered">
+            <div class="fas_logo"><i class="fas fa-book"></i></div>
+            <div>Books and More</div>
+            <div class="description">
+              All types of books, magazines, and related stationery items.
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="grid-item-3">
+        <h3>About Us</h3>
+        <p>
+          XYZ eShop is committed to providing quality products at competitive
+          prices, right at your doorstep. We strive to offer a seamless shopping
+          experience for all our customers.
+        </p>
+      </section>
+      <section class="grid-item-4">
+        <h3>Customer Reviews/Testimonials</h3>
+        <div class="main-testimonial">
+          <div class="testimonial">
+            <img src="/img/img3.jpg" alt="Customer 1" />
+            <div class="testimonial-content">
+              <h4>Customer 1</h4>
+              <p>
+                I had an amazing experience shopping here. The products are of
+                great quality and the service was exceptional. Highly
+                recommended!
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <img src="/img/img2.jpg" alt="Customer 2" />
+            <div class="testimonial-content">
+              <h4>Customer 2</h4>
+              <p>
+                The delivery was quick and the product matched the description
+                perfectly. Very satisfied with my purchase.
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <img src="/img/img1.jpg" alt="Customer 3" />
+            <div class="testimonial-content">
+              <h4>Customer 3</h4>
+              <p>
+                The customer service was fantastic. They resolved my issue
+                promptly and professionally. I will definitely be a return
+                customer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-item-7">
+        <h3 class="">Subscribe to Our Newsletter</h3>
+        <form>
+          <label for="email">Email:</label><br />
+          <input placeholder="Email" type="email" id="email" name="email" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </section>
+      <section class="grid-item-5">
+        <h3 class="left">Shipping & Returns Policy</h3>
+        <p>
+          We accept returns within 30 days of the delivery date. The item must
+          be in its original condition and packaging.
+        </p>
+      </section>
+      <section class="grid-item-6">
+        <h3 class="left">Contact Information</h3>
+        <p>Email: info@xyzeshop.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 XYZ Street, City, Country</p>
+      </section>
+
+      <section>
+        <h3 class="left">Follow Us</h3>
+        <!-- Add social media links here -->
+      </section>
+
+      <footer>
+        <p>© 2022 XYZ eShop. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
